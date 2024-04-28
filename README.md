@@ -1,4 +1,7 @@
 # Travel--Interactive-map
+
+The web application aims to provide users with an immersive platform to discover and learn about lesser-known travel destinations worldwide. Users can interact with maps, access rich location descriptions, tailor travel itineraries, participate in a quiz to test their tourism knowledge, and engage with a chat bot for assistance. User registration and login functionality will enhance personalization and engagement.
+
 ![WhatsApp Image 2024-04-28 at 00 14 33_55572f0c](https://github.com/ShubhamUPES/Travel--Interactive-map/assets/167737503/4249f5f1-148d-4ce0-8dd2-458c46086e1f)
 ![WhatsApp Image 2024-04-28 at 00 45 15_17b9d2c9](https://github.com/ShubhamUPES/Travel--Interactive-map/assets/167737503/03bf37e4-ab31-4694-a030-ac789f65f9e4)
 ![WhatsApp Image 2024-04-28 at 00 47 52_d8e8dfd9](https://github.com/ShubhamUPES/Travel--Interactive-map/assets/167737503/da68c7fd-34d2-4d41-9783-3b500c68d874)
