@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer's Quest: Uncharted Territories</title>
+    <link rel="stylesheet" href="board.css">
+</head>
+<body>
+    <div id="game-board">
+        <div class="question-container">
+            <h1 class="question" id="question">Loading question...</h1>
+            <table id="options" class="options"></table>
+            <div id="result" class="result"></div>
+            <div id="score" class="score">Score: <span id="score-value">0</span></div>
+            <div id="timer" class="timer">Time left: <span id="time-left">15</span> seconds</div>
+            <input type="text" id="hint" class="hint" placeholder="Hint" readonly>
+            <button id="hint-btn" class="hint-btn">Reveal Hint</button>
+            <div id="game-over" class="game-over" style="display: none;">
+                <h2>Game Over!</h2>
+                <p>Your final score: <span id="final-score">0</span></p>
+                <button id="restart-btn" class="restart-btn">Restart</button>
+                <button id="return-home-btn" class="return-home-btn">Return to Homepage</button>
+            </div>
+        </div>
+    </div>
+    <script src="board.js"></script>
+</body>
+</html>

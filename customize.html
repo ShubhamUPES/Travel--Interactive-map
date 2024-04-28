@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Adventure Itinerary</title>
+    <link rel="stylesheet" href="customize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add any additional CSS or libraries here -->
+</head>
+<body>
+    <header>
+        <h1>Customizable Adventure Itinerary</h1>
+        <div class="video-container">
+            <video autoplay muted loop id="video-background">
+                <source src="customize.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div class="container">
+            <form id="itinerary-form">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration">Duration of Stay (in days):</label>
+                    <input type="number" id="duration" name="duration" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Budget per Person (in currency):</label>
+                    <input type="number" id="budget" name="budget" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="activities">Preferred Activities:</label>
+                    <select id="activities" name="activities" multiple required>
+                        <option value="hiking">Hiking 🥾</option>
+                        <option value="rock-climbing">Rock Climbing 🧗‍♂️</option>
+                        <option value="kayaking">Kayaking 🛶</option>
+                        <option value="wildlife-safari">Wildlife Safari 🦁</option>
+                        <!-- Add more adventure options as needed -->
+                    </select>
+                </div>
+                
+                <button type="submit">Generate Itinerary</button>
+            </form>
+
+            <div id="itinerary"></div>
+        </div>
+    </main>
+    <script src="customize.js"></script>
+    <!-- Add any additional JavaScript or libraries here -->
+</body>
+</html>

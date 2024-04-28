@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="touristApp" ng-controller="MainController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranidah Waterfall</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="ranidah.css">
+</head>
+<body>
+    <header>
+        <h1>Ranidah Waterfall</h1>
+    </header>
+    <br>
+    <div class="Book Now" style="display: flex; align-items: center; justify-content: center;">
+        <a href="customize.html" style="text-decoration: none;">
+            <button type="button" style="padding: 8px; border: none; border-radius: 5px; background-color: #007bff; color: #fff;">
+                Click Here to plan the Trip.
+            </button>
+        </a>
+    </div>
+    
+    <main>
+        <section id="description">
+            <h2>Description</h2>
+            <p>{{ description }}</p>
+        </section>
+        <section id="nearest-landmark">
+            <h2>Nearest Landmark</h2>
+            <p>{{ nearestLandmark }}</p>
+        </section>
+        <section id="nearest-train-station">
+            <h2>Nearest Train Station</h2>
+            <p>{{ nearestTrainStation }}</p>
+        </section>
+        <section id="nearest-bus-stand">
+            <h2>Nearest Bus Stand</h2>
+            <p>{{ nearestBusStand }}</p>
+        </section>
+        <section id="visiting-hours">
+            <h2>Visiting Hours</h2>
+            <p>{{ visitingHours }}</p>
+        </section>
+        <section id="entry-fees">
+            <h2>Entry Fees</h2>
+            <p>{{ entryFees }}</p>
+        </section>
+        <section id="nearby-attractions">
+            <h2>Nearby Attractions</h2>
+            <ul>
+                <li ng-repeat="attraction in nearbyAttractions">{{ attraction }}</li>
+            </ul>
+        </section>
+        <section id="activities">
+            <h2>Activities</h2>
+            <ul>
+                <li ng-repeat="activity in activities">{{ activity }}</li>
+            </ul>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-container" >
+                
+                <img src="ranidah2.jpg" alt="Image 2" width="33%" height="auto">
+                <img src="ranidah3.jpeg" alt="Image 3" width="33%" height="auto">
+                <!-- Add more images as needed -->
+            </div>
+        </section>    
+        <section id="Book Now">
+            <h2>Book now</h2>
+            <div class="customize" >
+                <a href="customize.html">Click here to plan the trip.</a>
+            </div>
+        </section>     
+    </main>
+    <script src="ranidah.js"></script>
+</body>
+</html>

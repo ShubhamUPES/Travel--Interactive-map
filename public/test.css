@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0e0e;
+    
+}
+
+.header {
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 3px;
+    height: 40px; /* Decrease height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin-left: 4px; /* Decrease margin */
+    font-family: 'Pacifico', cursive;
+    font-size: 18px; /* Decrease font size */
+    align-items: center;
+    padding: 2px 6px; /* Decrease padding */
+    border-radius: 8px;
+    color: #101010;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 3px; /* Decrease margin */
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 10px; /* Decrease font size */
+    padding: 1px 4px; /* Decrease padding */
+    border-radius: 6px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(145deg, #3e64ff, #ff6363);
+}
+
+
+
+.cta-button {
+    text-align: center;
+}
+
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 4px 8px; /* Decrease padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 12px; /* Decrease font size */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}

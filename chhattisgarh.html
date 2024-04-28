@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Locations</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #8B4513);
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .row {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .location-box {
+            background:#1c1717;
+            width: calc(33.33%);/* Adjust width for 3 boxes in a row with margin */
+            overflow: hidden;
+            position: relative;
+            border: 2px solid transparent;
+            padding: 15px;
+            margin-bottom: 15px;
+            color: #efeded;
+            transition: all 0.3s ease;
+            box-shadow: 0px 2px 5px rgba(248, 28, 3, 0.1);
+            cursor: pointer;
+            text-decoration: none; /* To remove default underline on links */
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+        .location-box:hover,
+        .location-box:active {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 14px rgba(110, 210, 4, 0.2);
+             
+        }
+        .location-image {
+            max-width: 100%;
+            height: 60%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .location-box h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .location-box p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="location-box">
+                <h2><a href="ranidah.html">Ranidah Waterfall</a></h2>
+                <img src="ranidah.jpg" alt="Location 1" class="location-image">
+                <p>Nearest Landmark: Bastar Wildlife Sanctuary</p>
+                <p>Nearest Train Station: Jagdalpur Railway Station</p>
+                <p>Nearest Bus Stand: Jagdalpur Railway Station
+                </p>
+            </div>
+            <div class="location-box">
+                <h2>Semarsot Wildlife Sanctuary:</h2>
+                <img src="semarsot.jpg" alt="Location 2" class="location-image">
+                <p>Nearest Landmark: Narayanpur</p>
+                <p>Nearest Train Station: Jagdalpur Railway Station</p>
+                <p>Nearest Bus Stand: Narayanpur</p>
+            </div>
+            <div class="location-box">
+                <h2>Sarangarh-Gomarda Wildlife Sanctuary:</h2>
+                <img src="sarangarh.jpg" alt="Location 3" class="location-image">
+                <p>Nearest Landmark: Sarangarh</p>
+                <p>Nearest Train Station: Raigarh Railway Station</p>
+                <p>Nearest Bus Stand: Sarangarh</p>
+            </div>
+            <div class="location-box">
+                <h2>Ghatarani Waterfalls:</h2>
+                <img src="ghatarani.jpg" alt="Location 3" class="location-image">
+                <p>Nearest Landmark: Raipur</p>
+                <p>Nearest Train Station:  Raipur Junction</p>
+                <p>Nearest Bus Stand: Mandhar</p>
+            </div>
+            <div class="location-box">
+                <h2>Tandula Reservoir</h2>
+                <img src="tandula.jpeg" alt="Location 3" class="location-image">
+                <p>Nearest Landmark: Balod</p>
+                <p>Nearest Train Station:  Durg Railway Station</p>
+                <p>Nearest Bus Stand: Balod</p>
+            </div>
+            <div class="location-box">
+                <h2>Bastar Palace, Jagdalpur:</h2>
+                <img src="bastar.jpg" alt="Location 3" class="location-image">
+                <p>Nearest Landmark: Jagdalpur</p>
+                <p>Nearest Train Station: Jagdalpur Railway Station
+                </p>
+                <p>Nearest Bus Stand:  Jagdalpur</p>
+            </div>
+            
+        </div>
+        <!-- Repeat the above structure for the next row -->
+        <!-- Ensure to change the background image URLs accordingly -->
+    </div>
+</body>
+</html>

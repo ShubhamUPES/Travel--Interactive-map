@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Chalo Chalein</title>
+    <script src="mapdata.js"></script>
+    <script src="countrymap.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      .header {
+    background-image: url('/header2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    height: 150px; /* Increased height for better visibility */
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.myclass {
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Add some left margin for spacing */
+}
+
+
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+
+.myclass {
+    text-align: left; /* Align text to the left */
+    margin-left: 30px; /* Optional: Add some left margin for spacing */
+}
+.logo{
+  font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #110c0c; /* Black color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+    margin-top: 0;
+    margin-left: -500px; /* Shift text further towards the left */
+    letter-spacing: 2px; /* Increased letter spacing for impact */
+
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #FF6347; }
+    50% { text-shadow: 0 0 20px #FF6347; }
+    100% { text-shadow: 0 0 10px #FF6347; }
+}
+
+.slogan {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #070606; /* Black color */
+    text-shadow: 0 0 10px #FF6347; /* Initial glow effect */
+    margin-top: 0;
+    margin-left: -500px; /* Shift text further towards the left */
+    letter-spacing: 2px; /* Increased letter spacing for impact */
+    animation: glow 2s linear infinite; /* Animation for extra effect */
+}
+
+
+
+      .Quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-button {
+    text-align: center;
+  }
+  .cta {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFC107; /* Yellow color */
+    background: #1E1E1E; /* Dark gray background */
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0 0 10px 0 rgba(255, 193, 7, 0.7); /* Initial glow effect */
+}
+
+.cta:hover {
+    background: #FFC107; /* Yellow background on hover */
+    color: #1E1E1E; /* Dark gray text on hover */
+    box-shadow: 0 0 20px 0 rgba(255, 193, 7, 0.9); /* Enhanced glow effect on hover */
+}
+
+
+
+  button {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #354649, #a3b8bd, #83A0AC, #38bbf3);
+    color: white;
+    animation: pulse 1s infinite alternate; /* Adding animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  input[type='text']{
+    border:2px solid red;
+  }
+  #map{
+    height:700px;
+    width:700px;
+    margin:auto;
+  }
+  .myclass{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+  }
+    /* Navbar container */
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Active/current link */
+  .active {
+    background-color: #666;
+    color: white;
+  }
+  </style>
+  </head>
+  <body style="background-color: #0b0808;">
+    <div class="header">
+      <div class="myclass">
+          <h1 class="logo">चलो चलें!</h1>
+          <br>
+          <h2 class="slogan">Explore the Unexplored</h2>
+      </div>
+  </div>
+  
+        <div class="navbar">
+          <a class="active" href="#">Home</a>
+          <a href="#">About Us</a>
+          <form action="/" method="POST">
+            <input type="submit" class="submitbtn" name="howtoproceed" value="Register">
+            <input type="submit" class="submitbtn" name="howtoproceed" value="Login">
+
+        </form>
+          <a href="#">Gallery</a>
+          <a href="#">Contact Us</a>
+        </div>
+<br>
+<br>
+<br>
+<div class="Quiz" style="display: flex; align-items: center; justify-content: center;">
+  <a href="board.html" style="text-decoration: none;">
+      <button type="button" style="padding: 8px; border: none; border-radius: 10px; background: linear-gradient(135deg, #f86204, #ef4102, #f81a01, #703100);
+      color: white; transition: background 0.3s;">
+        Explore & Discover: Travel Quiz
+      </button>
+  </a>
+</div>
+
+
+  <br>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/1594ac29-6e9c-471d-b4de-c16953c21ebf/webchat/config.js" defer></script>
+  
+  <div class="cta-button">
+    <br>
+    <a href="customize.html" class="cta">"Start Your Adventure – Book Now! 🌍✈️🚗"</a>
+  </div>
+  <input type="text" id="coordinates" placeholder="Enter coordinates (latitude, longitude)">
+    <button onclick="pinpointLocation()">Pinpoint Location</button>
+    <div id="map"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-map-learn/0.1.2/simple-map-learn.min.js"></script>
+    <script src="script.js"></script>
+  <br>
+    <div id="map"></div>
+    </body>
+</html>
+
+      
+    
+
